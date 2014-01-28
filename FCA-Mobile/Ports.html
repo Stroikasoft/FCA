@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title></title>
@@ -281,7 +281,7 @@
                   google.maps.event.addListener(marker, 'click', (function (marker, i) {
                       return function () {
                           var loc = locations[i][0];
-                          loc += '<div style="text-align:center;"><a href="http://maps.google.com/?q=';
+                          loc += '<div style="text-align:center;"><a data-rel="external"  href="comgooglemaps://?q=';
                           loc += locations[i][1] + ',' + locations[i][2];
                           loc += '" style="color:#00303f;font:bold 12px verdana;" title="click here"><img src="googlemapicon.png" alt=""/></a></div>';
                           infowindow.setContent(loc);
