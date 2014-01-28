@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<link href="../kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+	<link href="../styles/main.css" rel="stylesheet" />
+
+	<script src="../cordova.js"></script>
+	<script src="../kendo/js/jquery.min.js"></script>
+	<script src="../kendo/js/kendo.mobile.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+
+	<script src="../scripts/login.js"></script>
+	<script src="../scripts/location.js"></script>
+	<script src="../scripts/weather.js"></script>
+	<script src="../scripts/app.js"></script>
+
+</head>
+<body>
+	<!--Home-->
+     <div id="AnnualStatisticalReport" data-role="view" data-title="Annual Statistical Report">
+    <ul data-role="listview" data-style="inset" data-type="group">
+        <li>Annual Statistical Report
+            <ul>
+                <li ><a window.location.href="Http://www.Customs.ae/En/MediaCommunity/Publishes/Statistical Bulletin Thirty Two Issue.pdf" target="_blank" >Statistical Bulletin Thirty Two Issue</a></li>
+                <li ><a href="http://www.youtube.com/watch?v=gGULIiQqEiA">Free Zones</a></li>
+                <li ><a href="StatisticalReportsList/CustomsEmiratesList.html">Customs Emirates</a></li>
+            </ul>
+        </li>
+    </ul>
+
+         <div class="animClass">
+    <iframe width="80%" height="30%" src="http://www.youtube.com/embed/-1UIBTve4dI?rel=0&;&autoplay=0&controls=1" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+
+    <script>
+        var app = new kendo.mobile.Application(document.body);
+</script>
+
+	<!--Layout-->
+	<div data-role="layout" data-id="tabstrip-layout">
+
+		<!--Header-->
+		<div data-role="header">
+			<div data-role="navbar">
+				<span data-role="view-title"></span>
+			</div>
+		</div>
+
+		<!--Footer-->
+		<div data-role="footer">
+			<div data-role="tabstrip">
+			<a href="English.html" data-icon="home">Home</a>
+				<a href="Services.html" data-icon="action">Services</a>
+				<a href="Ports.html" data-icon="search">Ports</a>
+				<a href="News.html" data-icon="globe">News</a>
+                <a href="ContactUs.html" data-icon="contacts">ContactUs</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,590 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
+    <script src="cordova.js"></script>
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+    <script src="scripts/login.js"></script>
+    <script src="scripts/location.js"></script>
+    <script src="scripts/News.js"></script>
+    <script src="scripts/app.js"></script>
+</head>
+<body>
+    <!--Home-->
+    <div id="PassengerGuide" data-role="view" data-title="Passenger Guide">
+        <div class="mainBodyArea">
+            <div class="innerpageTitle">
+                <h3>Passenger Guide in light of the UAE Customs Laws</h3>
+            </div>
+            <div class="article article-body">
+                <div class="article-content">
+ 
+
+<h4>The exempt materials authorized to be entered by passengers </h4>
+
+<br/>
+
+<ol>
+    <li>Gifts that are not worth more than AED 3000.<br/>
+    </li>
+    <li>400 cigarettes and 50 cigars maximum. In case of excess quantity, such quantity shall be subject to the prescribed duties.<br/>
+    </li>
+    <li>A maximum of 500 grams of minced tobacco for smoking or pipes or chopped tobacco or molasses tobacco. In case of excess quantity, such quantity shall be subject to the prescribed duties.<br/>
+    </li>
+    <li>Alcoholic beverages of no more than 4 liters, or 2 packages of beer. More quantities shall be confiscated.</li>
+</ol>
+<br/>
+<h4>The exempt luggage authorized to be entered by passengers:</h4>
+<ol>
+    <li>Optical telescopes.
+    </li>
+    <li>Film projectors and accessories.
+    </li>
+    <li>Radios, CD players and discs. 
+    </li>
+    <li>Video and digital cameras and tapes for personal use.
+    </li>
+    <li>Mobile musical instruments.
+    </li>
+    <li>One cellular phone, one TV, and one receiver. 
+    </li>
+    <li>Baby carriages.
+    </li>
+    <li>Personal sports instruments.
+    </li>
+    <li>Computer and mobile printers.
+    </li>
+    <li>Disability car and wheelchair.
+    </li>
+    <li>Calculator.
+    </li>
+
+</ol>
+    <br/>
+    <h4>Terms for exemption from duties:</h4>
+    <ul>
+        <li>Luggage and gifts should be of personal nature and non-commercial quantities.
+        </li>
+        <li>Passenger shall not be a client of customs, or who is doing business with the material in possession.
+        </li>
+        <li>No cigarettes and alcoholic beverages shall be entered by those under 18.
+        </li>
+    </ul>
+
+<br/>
+<h5>Source: Common Customs Law of the GCC States and the executive regulations thereof, and the instructions issued by the competent authorities in accordance with law.</h5>
+<br/>
+<br/>
+Disclosure of cash:<br/>
+Passengers coming to the State shall disclose the amounts of cash in their possession in excess of an amount of (AED 100.000) one hundred thousand dirham, or the equivalent in other currencies as well as traveler&#39;s checks. They shall fill in the disclosure form prepared in accordance with the disclosure law applicable in the State. Those under the age of 18 are not allowed to enter cash amounts over the limit and the cash amounts in their possession shall be added to their accompanying guardians.&#160;
+<br/>
+<br/>
+<h5>Source: Federal Law No. 4 of 2003 regarding the Criminalization of Money Laundering and the resolutions of the UAE Central Bank.</h5>
+<br/>
+<h4>Restricted goods:</h4>
+<br/>
+The following items are allowed to enter the State conditional on the approval of the competent authority:
+<br/>
+<br/>
+
+<table class="customsTable" dir="ltr" cellspacing="0" cellpadding="0" style="width: 95%; height: 500px; text-align: center;">
+    <colgroup>
+        <col></col>
+        <col></col>
+        <col></col>
+        <col></col>
+    </colgroup>
+    <thead>
+        <tr>
+            <th>
+                <strong>S</strong>
+            </th>
+
+            <th>
+                <strong>Item</strong>
+
+            </th>
+
+            <th>
+                <strong>Competent authority in the UAE</strong>
+
+            </th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>
+                <strong>1</strong>
+
+            </td>
+
+            <td>Predatory animals
+ 
+            </td>
+
+            <td>Ministry of Environment and Water 
+ 
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <strong>2</strong>
+
+            </td>
+
+            <td>Bustard 
+ 
+            </td>
+
+            <td>Ministry of Environment and Water 
+ 
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <strong>3</strong>
+
+            </td>
+
+            <td>Weapons and ammunitions of all kinds 
+ 
+            </td>
+
+            <td>Ministry of Interior 
+ 
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <strong>4</strong>
+
+            </td>
+
+            <td>Alcohol 
+ 
+            </td>
+
+            <td>Ministry of Interior 
+ 
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <strong>5</strong>
+
+            </td>
+
+            <td>Narcotic
+  medications and drugs for medical purposes 
+ 
+            </td>
+
+            <td>Ministry of Health 
+ 
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <strong>6</strong>
+
+            </td>
+
+            <td>Telecommunication
+  devices, transmission and enhancement devices, jamming devices and mobile
+  network blockers 
+ 
+            </td>
+
+            <td>TRA 
+ 
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <strong>7</strong>
+
+            </td>
+
+            <td>Fireworks and explosives 
+ 
+            </td>
+
+            <td>Ministry of Interior 
+ 
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <strong>8</strong>
+
+            </td>
+
+            <td>Camels 
+ 
+            </td>
+
+            <td>Ministry of Environment and Water 
+ 
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <strong>9</strong>
+
+            </td>
+
+            <td>Live animals 
+ 
+            </td>
+
+            <td>Ministry of Environment and Water 
+ 
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <strong>10</strong>
+
+            </td>
+
+            <td>Live fish   
+ 
+            </td>
+
+            <td>Ministry of Environment and Water 
+ 
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <strong>11</strong>
+
+            </td>
+
+            <td>Electronic cigarette 
+ 
+            </td>
+
+            <td>Environment
+  Research Authority   
+ 
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <strong>12</strong>
+
+            </td>
+
+            <td>Electronic cigarette 
+ 
+            </td>
+
+            <td>Environment
+  Research Authority   
+ 
+            </td>
+
+        </tr>
+
+    </tbody>
+</table>
+<br/>
+<h5>Source: Common Customs Law of the GCC States and the executive regulations thereof, and the instructions issued by the competent authorities in accordance with law.</h5>
+<br/>
+<h4>Prohibited goods:</h4>
+<br/>
+<br/>
+
+<table class="customsTable" dir="ltr" cellspacing="0" cellpadding="0" style="width: 95%; height: 500px; text-align: center;">
+    <colgroup>
+        <col></col>
+        <col></col>
+        <col></col>
+        <col></col>
+    </colgroup>
+    <thead>
+        <tr>
+            <th>
+                <strong>S</strong>
+            </th>
+
+            <th>
+                <strong>Item</strong>
+
+            </th>
+
+            <th>
+                <strong>Competent authority in the UAE</strong>
+
+            </th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+
+
+        <tr>
+            <td>1</td>
+            <td>Hashish, opium, heroine, morphine, cocaine, papaver and its hull and seeds, Khat, cannabis and any other grains of similar effect</td>
+
+            <td>Ministry of Interior</td>
+
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Counterfeit and fake currencies</td>
+            <td>UAE Central Bank</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Authentic publication, oil painting, photographs, pictures, cards, books, magazines stony sculptures, which contradict Islamic teachings, decencies or deliberately implying immorality or turmoil.</td>
+
+            <td>Ministry of Information</td>
+        </tr>
+        <tr>
+            <td>4
+            </td>
+            <td>Crude Ivory (elephant ivory) and Rhinoceros’s horn.</td>
+            <td>Environment Research Authority</td>
+        </tr>
+        <tr>
+            <td>5
+            </td>
+            <td>Three-layer nylon fishing nets
+
+            </td>
+
+            <td>Ministry of Environment and Water
+            </td>
+        </tr>
+        <tr>
+            <td>6
+            </td>
+            <td>Falcons shall be prohibited from April to 31 August of each year except for the following:<br/>
+                1. Falcons with permits under CITES Convention.<br/>
+                2. Falcons bearing passports.<br/>
+                3. Sick falcons arriving for treatment after obtaining permits from<br/>
+
+                the Environment Research Authority </td>
+            <td>Ministry of Environment and Water
+            </td>
+        </tr>
+        <tr>
+            <td>7
+            </td>
+            <td>Gambling tools &amp; machine s
+
+            </td>
+            <td>Ministry of Interior
+
+            </td>
+        </tr>
+        <tr>
+            <td>8
+            </td>
+            <td>Candy cigarettes</td>
+            <td>Municipality</td>
+        </tr>
+        <tr>
+            <td>9
+            </td>
+            <td>Ozone depleting materials</td>
+            <td>Environment Research Authority</td>
+        </tr>
+
+        <tr>
+            <td>10
+            </td>
+            <td>Radioactive materials</td>
+            <td>Ministry of Health, Municipality</td>
+        </tr>
+
+        <tr>
+            <td>11
+            </td>
+            <td>Sheets and pipes made of asbestos</td>
+            <td>Ministry of Health</td>
+        </tr>
+        <tr>
+            <td>12
+            </td>
+            <td>Red laser pointers</td>
+            <td>Ministry of Interior</td>
+        </tr>
+
+        <tr>
+            <td>13
+            </td>
+            <td>Hazardous waste</td>
+
+            <td>Environment Research Authority</td>
+        </tr>
+    </tbody>
+</table>
+<br/>
+<h5>Source: Common Customs Law of the GCC States and the executive regulations thereof, and the instructions issued by the competent authorities in accordance with law.</h5>
+<br/>
+<h4>Smuggling and penalties:</h4>
+<br/>
+<ul>
+    <li>Customs smuggling:
+    </li>
+</ul>
+Customs smuggling is the admission, transit or exit of the goods without paying the customs duties or in violation of the provisions of restriction and prohibition stated in the laws in force in the State.&#160;&#160;
+<h5>(Article 142 of the Common Customs Law of the GCC States).</h5>
+<ul>
+    <li>Forms of smuggling:
+    </li>
+</ul>
+<br/>
+<ol>
+    <li>A passenger did not proceed with the goods to the first port of entry (customs office).
+    </li>
+    <li>A passenger did not disclose the incoming or outgoing goods, which have a commercial character to the customs office
+    </li>
+    <li>When the goods surpass the customs office at entry or exit without being disclosed.
+    </li>
+    <li>Producing false, fraudulent or fabricated documents or lists or affixing false marks intended to evade the customs duties in whole or in part, or to avoid the provisions of prohibition and restriction.
+    </li>
+    <li>Transporting or acquisition of prohibited or restricted goods without submitting evidence supporting their legal importation.
+    </li>
+</ol>
+<br/>
+<h5>(Article 143 of the Common Customs Law of the GCC States).</h5>
+<br/>
+<ul>
+    <li>Smuggling penalties:
+    </li>
+</ul>
+<br/>
+<br/>
+
+<table class="customsTable" dir="ltr" cellspacing="0" cellpadding="0" style="width: 95%; height: 500px; text-align: center;">
+    <colgroup>
+        <col></col>
+        <col></col>
+        <col></col>
+        <col></col>
+    </colgroup>
+    <thead>
+        <tr>
+            <th>
+                <strong>Penalty</strong>
+            </th>
+
+            <th>
+                <strong>Goods</strong>
+
+            </th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <td>-&#160;Fine [Double the value of goods &gt; penalty &gt; double the customs duties]; and/or<br/>
+                -&#160;Imprisonment [month – year] &#160;
+            </td>
+            <td>Goods subject to high customs duties
+            </td>
+        </tr>
+        <tr>
+            <td>-&#160;Fine [Double the value of goods &gt; penalty &gt; double the customs duties]; and/or<br/>
+                -&#160;Imprisonment [month – year] &#160;
+            </td>
+            <td>Other goods subject to customs duties (5%)
+            </td>
+        </tr>
+        <tr>
+            <td>-&#160;Fine [10% of the value of goods &gt; penalty &gt; the value of the goods] ; and/or<br/>
+                -&#160;- Imprisonment [month – year] &#160;
+            </td>
+            <td>Exempt goods
+            </td>
+        </tr>
+        <tr>
+            <td>-&#160;Fine [The value of goods &gt; penalty &gt; Three times the value of goods] ; and/or<br/>
+                -&#160;- Imprisonment [6 months – 3 years] &#160;
+            </td>
+            <td>Prohibited goods
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+<br/>
+<h4>In addition to:</h4>
+<br/>
+<ol>
+    <li>Confiscation of smuggled goods or imposing a fine equal to the value of such goods in case of not confiscating the same.
+    </li>
+    <li>Confiscation of transmission media (save for the public transmission media).
+    </li>
+    <li>Confiscation of the tools and materials used for smuggling.<h5>(Article 24 of the Common Customs Law of the GCC States)</h5>
+    </li>
+</ol>
+<br/>
+<br/>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+   <!--Layout-->
+	<div data-role="layout" data-id="tabstrip-layout">
+
+		<!--Header-->
+		<div data-role="header">
+			<div data-role="navbar">
+                   <a id="buttonAddNewCard" data-role="button" href="English.html"  data-align="left" ></a>
+				<span data-role="view-title"></span>
+			</div>
+		</div>
+
+		<!--Footer-->
+		<div data-role="footer">
+			<div data-role="tabstrip">
+			<a href="English.html" data-icon="home">Home</a>
+				<a href="Services.html" data-icon="action">Services</a>
+				<a href="Ports.html" data-icon="search">Ports</a>
+				<a href="News.html" data-icon="globe">News</a>
+                <a href="ContactUs.html" data-icon="contacts">Contact Us</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

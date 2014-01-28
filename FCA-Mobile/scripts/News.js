@@ -1,9 +1,9 @@
 ﻿(function (global) {
-	var WeatherViewModel,
+    var NewsViewModel,
 		app = global.app = global.app || {};
 
-	WeatherViewModel = kendo.data.ObservableObject.extend({
-		weatherDataSource: null,
+	NewsViewModel = kendo.data.ObservableObject.extend({
+		NewsDataSource: null,
 
 		init: function () {
 			var that = this,
@@ -14,17 +14,17 @@
 			dataSource = new kendo.data.DataSource({
 				transport: {
 					read: {
-						url: "data/weather.json",
+						url: "data/News.json",
 						dataType: "json"
 					}
 				}
 			});
 
-			that.set("weatherDataSource", dataSource);
+			that.set("NewsDataSource", dataSource);
 		}
 	});
 
-	app.weatherService = {
-		viewModel: new WeatherViewModel()
+	app.NewsService = {
+	    viewModel: new NewsViewModel()
 	};
 })(window);

@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+	<link href="styles/main.css" rel="stylesheet" />
+
+	<script src="cordova.js"></script>
+	<script src="kendo/js/jquery.min.js"></script>
+	<script src="kendo/js/kendo.mobile.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+
+	<script src="scripts/login.js"></script>
+	<script src="scripts/location.js"></script>
+	<script src="scripts/weather.js"></script>
+	<script src="scripts/app.js"></script>
+    <script src="scripts/News.js"></script>
+
+</head>
+<body>
+	
+	 <div data-role="view" data-init="mobileListViewFiltering" data-title="Scroll down to load">
+    <header data-role="header">
+        <div data-role="navbar">
+            <span data-role="view-title"></span>
+            <a data-align="right" data-role="button" class="nav-button" href="#index">Index</a>
+        </div>
+    </header>
+
+    <ul id="filterable-listview"></ul>
+</div>
+  
+<script type="text/x-kendo-tmpl" id="mobile-listview-filtering-template">
+    <div class="product">
+      
+        <h3>#:portName#</h3>
+      <a href="#=link#" data-rel="external" >sdfsd</a>
+
+
+    </div>
+</script>
+
+<script>
+    function mobileListViewFiltering() {
+        var dataSource = new kendo.data.DataSource({
+            transport: {
+                read: {
+                    url: "data/Ports.json",
+                    dataType: "json"
+                }
+            },
+            sort: {
+                field: "portName",
+                dir: "desc"
+            },
+            serverPaging: true,
+            serverFiltering: true,
+            serverSorting: true,
+            pageSize: 50
+        });
+
+        $("#filterable-listview").kendoMobileListView({
+            dataSource: dataSource,
+            template: $("#mobile-listview-filtering-template").text(),
+            filterable: {
+                field: "portName",
+                operator: "startswith"
+            },
+            endlessScroll: true
+        });
+    }
+</script>
+
+<style scoped>
+    .product h3 {
+        font-size: 1.3em;
+        line-height: 1.4em;
+        margin: 0;
+        padding: 0;
+        height: 1.3em;
+        overflow: hidden;
+    }
+    .product p {
+        font-size: 1em;
+        margin: 0;
+        padding: .3em 0 0;
+    }
+    .pullImage {
+        width: 64px;
+        height: 64px;
+        border-radius: 3px;
+        float: left;
+        margin-right: 10px;
+    }
+</style>
+
+
+<script>
+    var app = new kendo.mobile.Application(document.body);
+</script>
+</body>
+</html>

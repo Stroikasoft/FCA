@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+	<link href="styles/main.css" rel="stylesheet" />
+
+	<script src="cordova.js"></script>
+	<script src="kendo/js/jquery.min.js"></script>
+	<script src="kendo/js/kendo.mobile.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+
+	<script src="scripts/login.js"></script>
+	<script src="scripts/location.js"></script>
+	<script src="scripts/weather.js"></script>
+    <script src="scripts/News.js"></script>
+    <script src="scripts/NewsAR.js"></script>
+	<script src="scripts/app.js"></script>
+
+</head>
+<body>
+	<!--Home-->
+  
+    <div id="About FCA list" data-role="view" data-title="About FCA">
+    <ul data-role="listview" data-style="inset" data-type="group">
+            <li>
+            <ul>
+             <li ><a href="AboutFCA_AboutFCA.html">About FCA</a></li>
+             <li ><a href="AboutFCA_GMSpeech.html">GM Speech</a></li>
+             <li ><a href="AboutFCA_Beginning.html">FCA Beginning </a></li>
+             <li ><a href="AboutFCA_VisionMission.html">Vision And Mission </a></li>
+             <li ><a href="AboutFCA_ValuesObjectives.html"> Values And Objectives </a></li>
+             <li ><a href="AboutFCA_Structure.html"> Organizational Structure  </a></li>
+             </ul>
+             </li>
+    </ul>
+</div>
+
+    <script>
+        var app = new kendo.mobile.Application(document.body);
+</script>
+
+
+	<!--Layout-->
+	<div data-role="layout" data-id="tabstrip-layout">
+
+		<!--Header-->
+		<div data-role="header">
+			<div data-role="navbar">
+                <a id="buttonAddNewCard" data-role="button" href="English.html"  data-align="left" ></a>
+				<span data-role="view-title"></span>
+			</div>
+		</div>
+
+		<!--Footer-->
+		<div data-role="footer">
+			<div data-role="tabstrip">
+				<a href="English.html" data-icon="home">Home</a>
+				<a href="Services.html" data-icon="action">Services</a>
+				<a href="Ports.html" data-icon="search">Ports</a>
+				<a href="News.html" data-icon="globe">News</a>
+                <a href="ContactUs.html" data-icon="contacts">ContactUs</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

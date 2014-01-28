@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
+
+    <script src="cordova.js"></script>
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+
+    <script src="scripts/login.js"></script>
+    <script src="scripts/location.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/News.js"></script>
+
+</head>
+<body dir="rtl">
+
+    <!--ContactUs-->
+    <div id="tabstrip-ContactUs"
+        data-role="view"
+        data-title="ContactUs">
+
+        <div class="beigeBg">
+            <h3>الهيئة الإتحادية للجمارك</h3>
+            <p>الإمارات العربية المتحدة</p>
+            <p>ص.ب: إمارة أبوظبي - 1234</p>
+            <p>البريد الإلكتروني: services@customs.ae</p>
+        </div>
+
+        <div class="beigeBg">
+            <h3>أبوظبي</h3>
+            <img src="icons/phone.png" /><span>T: +971 (2) 6979700</span>
+            <br />
+            <img src="styles/images/fax.png" /><span>F: +971 (2) 6735201</span>
+
+        </div>
+        <div class="beigeBg">
+            <h3>دبي</h3>
+            <img src="icons/phone.png" /><span>T: +971 (2) 6979700</span>
+            <br />
+            <img src="styles/images/fax.png" /><span>F: +971 (2) 6735201</span>
+        </div>
+        <!--<a><img src="" /></a>-->
+    </div>
+
+
+
+
+    <!--Layout-->
+    <div data-role="layout" data-id="tabstrip-layout">
+
+        <!--Header-->
+        <div data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div data-role="footer">
+            <div data-role="tabstrip">
+       <a href="English.html" data-icon="home">Home</a>
+				<a href="Services.html" data-icon="action">Services</a>
+				<a href="Ports.html" data-icon="search">Ports</a>
+				<a href="News.html" data-icon="globe">News</a>
+                <a href="ContactUs.html" data-icon="contacts">ContactUs</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

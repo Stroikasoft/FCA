@@ -1,0 +1,390 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Clearance Mechanism</title>
+	<meta charset="utf-8" />
+	<link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+	<link href="styles/main.css" rel="stylesheet" />
+
+	<script src="cordova.js"></script>
+	<script src=".kendo/js/jquery.min.js"></script>
+	<script src="kendo/js/kendo.mobile.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+
+	<script src="scripts/login.js"></script>
+	<script src="scripts/location.js"></script>
+	<script src="scripts/weather.js"></script>
+	<script src=".scripts/app.js"></script>
+
+</head>
+<body>
+	<!--Home-->
+     <div id="ServicePrice" data-role="view" data-title="Service Price">
+    <div class="mainBodyArea">
+        <div class="innerpageTitle">
+           <h3>List of fees for new customs services</h3>
+        </div>
+
+        <div class="article article-body">
+
+            <div class="article-content">
+                 
+<br/>
+
+<table align="center" class="customsTable" dir="ltr" cellspacing="0" cellpadding="0" style="width: 95%; height: 400px; text-align: center;">
+    <colgroup>
+        <col></col>
+        <col></col>
+        <col></col>
+        <col></col>
+    </colgroup>
+    <thead>
+        <tr>
+            <th>
+                <strong>Serial</strong>
+            </th>
+
+            <th>
+                <strong>Custom Service Type</strong>
+
+            </th>
+
+            <th>
+                <strong>Duty in AED</strong>
+
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td>1 
+            </td>
+            <td>Issuing customs card for means of transport and machinery 
+            </td>
+            <td>30 
+            </td>
+        </tr>
+        <tr>
+            <td>2 
+            </td>
+            <td>Customs card amendment request by the client for every mistake  
+            </td>
+            <td>10 
+            </td>
+        </tr>
+        <tr>
+            <td>3 
+            </td>
+            <td>Duplicate   of any customs issued document 
+            </td>
+            <td>100 
+            </td>
+        </tr>
+        <tr>
+            <td>4 
+            </td>
+            <td>Re-export   declaration 
+            </td>
+            <td>100 
+            </td>
+        </tr>
+        <tr>
+            <td>5 
+            </td>
+            <td>Exempted   goods import &#160;  declaration   (non-dutiable) over land and sea 
+            </td>
+            <td>80 
+            </td>
+        </tr>
+        <tr>
+            <td>6 
+            </td>
+            <td>Unexempted   goods import declaration (dutiable) 
+            </td>
+            <td>70 
+            </td>
+        </tr>
+        <tr>
+            <td>7 
+            </td>
+            <td>Export   and temporary export declaration 
+            </td>
+            <td>100 
+            </td>
+        </tr>
+        <tr>
+            <td>8 
+            </td>
+            <td>Transit   declaration 
+            </td>
+            <td>50 
+            </td>
+        </tr>
+        <tr>
+            <td>9 
+            </td>
+            <td>Statistical   declaration 
+            </td>
+            <td>50 
+            </td>
+        </tr>
+        <tr>
+            <td>10 
+            </td>
+            <td>Loaded   Dhow manifest 
+            </td>
+            <td>20 
+            </td>
+        </tr>
+        <tr>
+            <td>11 
+            </td>
+            <td>Importer/exporter   code (companies) 
+            </td>
+            <td>100 
+            </td>
+        </tr>
+        <tr>
+            <td>12 
+            </td>
+            <td>Importer   code renew of charges 
+            </td>
+            <td>25 
+            </td>
+        </tr>
+        <tr>
+            <td>13 
+            </td>
+            <td>HS code 
+            </td>
+            <td>25 
+            </td>
+        </tr>
+        <tr>
+            <td>14 
+            </td>
+            <td>Reissue of   outbounding unloaded Dhow manifest 
+            </td>
+            <td>25 
+            </td>
+        </tr>
+        <tr>
+            <td>15 
+            </td>
+            <td>Couriers   exempted cargoes import declaration 
+            </td>
+            <td>50 
+            </td>
+        </tr>
+        <tr>
+            <td>16 
+            </td>
+            <td>Couriers   dutiable cargoes import declaration 
+            </td>
+            <td>40 
+            </td>
+        </tr>
+        <tr>
+            <td>17 
+            </td>
+            <td>Exempted   air cargoes import declaration 
+            </td>
+            <td>30 
+            </td>
+        </tr>
+        <tr>
+            <td>18 
+            </td>
+            <td>Postal   import/export declaration 
+            </td>
+            <td>30 
+            </td>
+        </tr>
+        <tr>
+            <td>19 
+            </td>
+            <td>Customs   exit/entry certificate 
+            </td>
+            <td>20 
+            </td>
+        </tr>
+        <tr>
+            <td>20 
+            </td>
+            <td>Customs   exit/entry certificate issuance 
+            </td>
+            <td>10 
+            </td>
+        </tr>
+        <tr>
+            <td>21 
+            </td>
+            <td>New   company/issue of trade license for clearing, shipping and forwarding   companies 
+            </td>
+            <td>700 
+            </td>
+        </tr>
+        <tr>
+            <td>22 
+            </td>
+            <td>License   renewal 
+            </td>
+            <td>700 
+            </td>
+        </tr>
+        <tr>
+            <td>23 
+            </td>
+            <td>Opening new   branch 
+            </td>
+            <td>700 
+            </td>
+        </tr>
+        <tr>
+            <td>24 
+            </td>
+            <td>Addition of   new partner 
+            </td>
+            <td>250 
+            </td>
+        </tr>
+        <tr>
+            <td>25 
+            </td>
+            <td>Addition of   new activity 
+            </td>
+            <td>250 
+            </td>
+        </tr>
+        <tr>
+            <td>26 
+            </td>
+            <td>Issue of   broker annual card 
+            </td>
+            <td>150 
+            </td>
+        </tr>
+        <tr>
+            <td>27 
+            </td>
+            <td>Renewal of   customs representative card per month – 50 (delay fine) 
+            </td>
+            <td>50 
+            </td>
+        </tr>
+        <tr>
+            <td>28 
+            </td>
+            <td>Industrial   products exemption charges 
+            </td>
+            <td>100 
+            </td>
+        </tr>
+        <tr>
+            <td>29 
+            </td>
+            <td>Duplicate   certificate 
+            </td>
+            <td>20 
+            </td>
+        </tr>
+        <tr>
+            <td>30 
+            </td>
+            <td>Goods   reconciliation upon client request written (inside customs zone) 
+            </td>
+            <td>150 
+            </td>
+        </tr>
+        <tr>
+            <td>31 
+            </td>
+            <td>Customs   seal charges 
+            </td>
+            <td>20 
+            </td>
+        </tr>
+        <tr>
+            <td>32 
+            </td>
+            <td>Borders   post clearing service charges (land) (non-preferential road charges) 
+            </td>
+            <td>150 
+            </td>
+        </tr>
+        <tr>
+            <td>33 
+            </td>
+            <td>Deposit   refund charges 
+            </td>
+            <td>50 
+            </td>
+        </tr>
+        <tr>
+            <td>34 
+            </td>
+            <td>Original   documents shortage deposit charges 
+            </td>
+            <td>1000 
+            </td>
+        </tr>
+        <tr>
+            <td>35 
+            </td>
+            <td>Letter   permitting Dhow entering other seaports in the country 
+            </td>
+            <td>50 
+            </td>
+        </tr>
+        <tr>
+            <td>36 
+            </td>
+            <td>Returned   cheque fine 
+            </td>
+            <td>500 
+            </td>
+        </tr>
+        <tr>
+            <td>37 
+            </td>
+            <td>Cancellation   of customs declaration charges 
+            </td>
+            <td>25 
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br/><br/>
+
+              
+                </div>
+        </div>
+    </div>
+    </div>
+
+	<!--Layout-->
+	<div data-role="layout" data-id="tabstrip-layout">
+
+		<!--Header-->
+		<div data-role="header">
+			<div data-role="navbar">
+                  <a id="buttonAddNewCard" data-role="button" href="CustomsAffairsList.html"  data-align="left" ></a>
+				<span data-role="view-title"></span>
+			</div>
+		</div>
+
+		<!--Footer-->
+		<div data-role="footer">
+			<div data-role="tabstrip">
+				<a href="English.html" data-icon="home">Home</a>
+				<a href="Services.html" data-icon="action">Services</a>
+				<a href="Ports.html" data-icon="search">Ports</a>
+				<a href="News.html" data-icon="globe">News</a>
+                <a href="ContactUs.html" data-icon="contacts">ContactUs</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

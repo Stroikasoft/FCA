@@ -1,52 +1,52 @@
-(function (global) {
-    var LoginViewModel,
-        app = global.app = global.app || {};
+﻿(function (global) {
+	var LoginViewModel,
+		app = global.app = global.app || {};
 
-    LoginViewModel = kendo.data.ObservableObject.extend({
-        isLoggedIn: false,
-        username: "",
-        password: "",
+	LoginViewModel = kendo.data.ObservableObject.extend({
+		isLoggedIn: false,
+		username: "",
+		password: "",
 
-        onLogin: function () {
-            var that = this,
-                username = that.get("username").trim(),
-                password = that.get("password").trim();
+		onLogin: function () {
+			var that = this,
+				username = that.get("username").trim(),
+				password = that.get("password").trim();
 
-            if (username === "" || password === "") {
-                navigator.notification.alert("Both fields are required!",
-                    function () { }, "Login failed", 'OK');
+			if (username === "" || password === "") {
+				navigator.notification.alert("Both fields are required!",
+					function () { }, "Login failed", 'OK');
 
-                return;
-            }
+				return;
+			}
 
-            that.set("isLoggedIn", true);
-        },
+			that.set("isLoggedIn", true);
+		},
 
-        onLogout: function () {
-            var that = this;
+		onLogout: function () {
+			var that = this;
 
-            that.clearForm();
-            that.set("isLoggedIn", false);
-        },
+			that.clearForm();
+			that.set("isLoggedIn", false);
+		},
 
-        clearForm: function () {
-            var that = this;
+		clearForm: function () {
+			var that = this;
 
-            that.set("username", "");
-            that.set("password", "");
-        },
+			that.set("username", "");
+			that.set("password", "");
+		},
 
-        checkEnter: function (e) {
-            var that = this;
+		checkEnter: function (e) {
+			var that = this;
 
-            if (e.keyCode == 13) {
-                $(e.target).blur();
-                that.onLogin();
-            }
-        }
-    });
+			if (e.keyCode == 13) {
+				$(e.target).blur();
+				that.onLogin();
+			}
+		}
+	});
 
-    app.loginService = {
-        viewModel: new LoginViewModel()
-    };
+	app.loginService = {
+		viewModel: new LoginViewModel()
+	};
 })(window);

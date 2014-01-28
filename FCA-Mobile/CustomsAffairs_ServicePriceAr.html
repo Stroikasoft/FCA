@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Clearance Mechanism</title>
+	<meta charset="utf-8" />
+	<link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+	<link href="styles/main.css" rel="stylesheet" />
+
+	<script src="cordova.js"></script>
+	<script src=".kendo/js/jquery.min.js"></script>
+	<script src="kendo/js/kendo.mobile.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+
+	<script src="scripts/login.js"></script>
+	<script src="scripts/location.js"></script>
+	<script src="scripts/NewsAR.js"></script>
+	<script src=".scripts/app.js"></script>
+
+</head>
+<body dir="rtl">
+	<!--Home-->
+     <div id="ServicePrice" data-role="view" data-title="رسوم الخدمات الجمركية">
+    <div class="mainBodyArea">
+        <div class="innerpageTitle">
+        <h3>
+           رسوم الخدمات الجمركية
+        </h3>
+        </div>
+
+        <div class="article article-body">
+
+            <div class="article-content">
+                 
+<h3>​نوع الخدمات الجمركية قيمة الرسم بالدرهم :</h3>
+
+    <div style="text-align: center;">
+        <table class="customsTable" dir="rtl" cellspacing="0" cellpadding="0" style="width: 100%;  text-align: center;">
+                    <colgroup>
+            <col></col>
+            <col></col>
+            <col></col>
+            <col></col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>
+                    <span>التسلسل
+                    </span>
+                </th>
+                <th>
+ <span>اسم الخدمة
+                    </span>
+                </th>
+               
+                <th>
+                    <span>المبلغ
+                    </span>
+                </th>
+
+            </tr>
+        </thead>
+      
+
+            <tbody>
+                    
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>1</strong></td>
+                    <td rowspan="1" colspan="1"><strong>بطاقة جمركية لوسائط النقل والمعدات الآلية </strong></td>
+                    <td rowspan="1" colspan="1"><strong>30</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>2</strong></td>
+                    <td><strong>طلب تعديل على بطاقة جمركية (من قبل العميل عن كل خطأ </strong></td>
+                    <td><strong>10</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>3</strong></td>
+                    <td>
+                        <div><strong>بدل فاقد أي مستند رسمي تصدره الدائرة الجمركية </strong></div>
+                    </td>
+                    <td><strong>100</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>4</strong></td>
+                    <td>
+                        <div><strong>بيان إعدادة التصدير </strong></div>
+                    </td>
+                    <td><strong>100</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>5</strong></td>
+                    <td>
+                        <div><strong>بيان الاستيراد للبضائع المعفية (غير المرسمة) برا وبحرا</strong></div>
+                    </td>
+                    <td><strong>80</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>6</strong></td>
+                    <td>
+                        <div><strong>بيان الاستيراد للبضائع غير المعفية (المرسمة) </strong></div>
+                    </td>
+                    <td><strong>70</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>7</strong></td>
+                    <td>
+                        <div><strong>بيان التصدير والتصدير المؤقت </strong></div>
+                    </td>
+                    <td><strong>100</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>8</strong></td>
+                    <td>
+                        <div><strong>بيان العبور </strong></div>
+                    </td>
+                    <td><strong>50</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>9</strong></td>
+                    <td>
+                        <div><strong>البيان الإحصائي </strong></div>
+                    </td>
+                    <td><strong>20</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>10</strong></td>
+                    <td>
+                        <div><strong>بيان المانفيست للسفن الصغيرة (الخشبية) المحملة </strong></div>
+                    </td>
+                    <td><strong>100</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>11</strong></td>
+                    <td>
+                        <div><strong>رمز المستورد / المصدر (للشركات) </strong></div>
+                    </td>
+                    <td><strong>25</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>12</strong></td>
+                    <td>
+                        <div><strong>رسوم تجديد رمز المستورد </strong></div>
+                    </td>
+                    <td><strong>25</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>13</strong></td>
+                    <td>
+                        <div><strong>رمز النظام المنسق </strong></div>
+                    </td>
+                    <td><strong>25</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>14</strong></td>
+                    <td>
+                        <div><strong>إعادة إصدار بيان مانفيست لسفينة صغيرة خارجة غير محملة </strong></div>
+                    </td>
+                    <td><strong>25</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>15</strong></td>
+                    <td>
+                        <div><strong>بيان الشحنات المستوردة المعفية عن طريق شركات النقل السريع </strong></div>
+                    </td>
+                    <td><strong>50</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>16</strong></td>
+                    <td>
+                        <div><strong>بيان الاستيراد للشحنات المرسمة عن طريق شركات النقل السريع </strong></div>
+                    </td>
+                    <td><strong>40</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>17</strong></td>
+                    <td>
+                        <div><strong>بيان الاستيراد للشحنات المعفية جوا </strong></div>
+                    </td>
+                    <td><strong>30</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>18</strong></td>
+                    <td>
+                        <div><strong>بيان الاستيراد / والتصدير للطرود البريدية</strong></div>
+                    </td>
+                    <td><strong>30</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>19</strong></td>
+                    <td>
+                        <div><strong>شهادة إبراء خروج / دخول الجمارك</strong></div>
+                    </td>
+                    <td><strong>20</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>20</strong></td>
+                    <td>
+                        <div><strong>إصدار شهادة خروج / دخول الجمارك </strong></div>
+                    </td>
+                    <td><strong>10</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>21</strong></td>
+                    <td>
+                        <div><strong>تأسيس شركة / إصدار ترخيص تجاري لشركات التخليص والشحن والتزوي</strong></div>
+                    </td>
+                    <td><strong>700</strong></td>
+                </tr>
+                <tr></tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>22</strong></td>
+                    <td>
+                        <div><strong>التجديد</strong></div>
+                    </td>
+                    <td><strong>700</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>23</strong></td>
+                    <td>
+                        <div><strong>افتتاح فرع جديد</strong></div>
+                    </td>
+                    <td><strong>700</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>24</strong></td>
+                    <td>
+                        <div><strong>إضافة شريك جديد </strong></div>
+                    </td>
+                    <td><strong>250</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>25</strong></td>
+                    <td>
+                        <div><strong>إضافة نشاط جدي</strong></div>
+                    </td>
+                    <td><strong>250</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>26</strong></td>
+                    <td>
+                        <div><strong>إصدار بطاقة مخلص سنوية</strong></div>
+                    </td>
+                    <td><strong>150</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>27 </strong></td>
+                    <td>
+                        <div><strong>تجديد بطاقة المندوب عن كل شهر </strong></div>
+                    </td>
+                    <td><strong>50</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>&#160;</strong></td>
+                    <td><strong>&#160;(غرامة تأخير) 50</strong></td>
+                    <td><strong>&#160;</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>28</strong></td>
+                    <td>
+                        <div><strong>رسوم إعفاء المنتجات الصناعية </strong></div>
+                    </td>
+                    <td><strong>100</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>29</strong></td>
+                    <td>
+                        <div><strong>شهادة نسخة طبق الأصل</strong></div>
+                    </td>
+                    <td><strong>20</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>30</strong></td>
+                    <td>
+                        <div><strong>رسوم مطابقة البضائع بناء على طلب كتابي من العميل&#160; داخل الحرم الجمركي</strong></div>
+                    </td>
+                    <td><strong>150</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>31</strong></td>
+                    <td>
+                        <div><strong>رسوم ترصيص جمركي </strong></div>
+                    </td>
+                    <td><strong>20 </strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>32</strong></td>
+                    <td>
+                        <div><strong>رسوم خدمات تخليص بالمراكز الحدودية (برية) (رسوم طرق غير تميزية) </strong></div>
+                    </td>
+                    <td><strong>150 </strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>33 </strong></td>
+                    <td>
+                        <div><strong>رسوم استرجاع مبلغ التأمين </strong></div>
+                    </td>
+                    <td><strong>50 </strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>34</strong></td>
+                    <td>
+                        <div><strong>رسوم التأمين لنقص المستندات الأصلية </strong></div>
+                    </td>
+                    <td><strong>1000 </strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>35</strong></td>
+                    <td>
+                        <div><strong>خطاب دخول إلى الموانئ الأخرى في الدولة للسفن الخشبية </strong></div>
+                    </td>
+                    <td><strong>50</strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>36</strong></td>
+                    <td><strong>غرامة شيك مرتجع </strong></td>
+                    <td><strong>500 </strong></td>
+                </tr>
+                <tr style="text-align: right;">
+                    <td rowspan="1" colspan="1"><strong>37</strong></td>
+                    <td><strong>رسوم إلغاء بيان جمركي </strong></td>
+                    <td><strong>25 </strong></td>
+                </tr>
+            </tbody>
+        </table>
+        <div>&#160;</div>
+    </div>
+
+
+
+
+              
+                </div>
+        </div>
+    </div>
+    </div>
+
+	<!--Layout-->
+	<div data-role="layout" data-id="tabstrip-layout">
+
+		<!--Header-->
+		<div data-role="header">
+			<div data-role="navbar">
+                  <a id="buttonAddNewCard" data-role="button" href="CustomsAffairsListAr.html"  data-align="left" ></a>
+				<span data-role="view-title"></span>
+			</div>
+		</div>
+
+		<!--Footer-->
+		<div data-role="footer">
+			<div data-role="tabstrip">
+				     <a href="Arabic.html" data-icon="home">الرئيسية</a>
+                <a href="ServicesAR.html" data-icon="action">الخدمات</a>
+                <a href="PortsAR.html" data-icon="search">المنافذ</a>
+                <a href="NewsAr.html" data-icon="globe">الاخبار</a>
+                <a href="ContactUsAR.html" data-icon="contacts">اتصل بنا</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

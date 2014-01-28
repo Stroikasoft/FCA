@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+	<link href="styles/main.css" rel="stylesheet" />
+
+	<script src="cordova.js"></script>
+	<script src="kendo/js/jquery.min.js"></script>
+	<script src="kendo/js/kendo.mobile.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+
+	<script src="scripts/login.js"></script>
+	<script src="scripts/location.js"></script>
+	<script src="scripts/weather.js"></script>
+	<script src="scripts/app.js"></script>
+    <script src="scripts/News.js"></script>
+
+</head>
+<body>
+	
+	<!--Services-->
+	<div id="tabstrip-Services"
+		data-role="view"
+		data-title="News">
+      
+
+        <div class="mainBodyArea">
+        <div class="innerpageTitle">
+            <h3>Free zone contribution hits AED 340.9 b // Total general trade collects AED 1,138 b in 9 months of 2012
+            </h3>
+        </div>
+
+        <div class="article article-body">
+
+            <div class="article-content">
+                The total general non-oil foreign trade (non-oil foreign and free zone trade) edged up by 19% in the United Arab Emirates during the first nine months of 2012 compared to the same period in 2011.  
+Federal Customs Authority (FCA) statistical study showed that the general non-oil foreign trade soared to AED 1.138 billion in the period of January- 30 September 2012 compared to AED 960 billion in the same period of the last year to mark an increase of AED 178 billion. 
+The total non-oil foreign trade increased to AED 797.4 billion in the first nine months of 2012, while the total free zone trade edged up to AED 340.9 billion within the same period, the FCA said in a press release yesterday.  
+The imports share in the UAE total general trade hit AED 692.7 billion for the first nine months of 2012, while the exports hit AED 53.8 billion and the re-exports hit AED 298.1 billion, the FCA said. 
+The total free zone trade, according to the FCA study said, achieved considerable growth of 24% in the first nine months of 2012 compared to the same period of the previous year, rising from AED 275.1 billion to AED 340.9 billion.   
+The free zone trade achieved impressive growth in exports and re-exports compared to the growth rate of imports within the same period, reflecting a great improvement in competitiveness of the exports of the UAE free zones and an increase of the regional and international demand for them". 
+"Free Zones imports jumped by 16% from AED 165.5 billion to AED 192.6 billion in the first nine months of 2012. Meanwhile, exports hiked 24% from AED 9.2 billion to AED 12.6 billion. and re-exports grow by 36% from AED 100.5 billion to AED 137 billion”.
+In terms of weight, the volume of free zones and markets trade in the said period reached 19,2 million tons, including 12,6 million tons of imports, 1.2 million tons of exports and 5.4 million tons of re-exports. 
+The study stated that the Asia-Pacific countries and Australia maintained its top rank amomg UAE's trade partners with respect to the FZ trade volume in the first nine months of 2012. This region contributed AED 149,9 billion (47%) of the total FZ trade volume, according to FCA. 
+While "The MENA region ranked second with AED 77.9 billion (24%), followed by Europe with AED 52.7 billion (17%), America and the Caribbean with AED 32.1 billion (7%), East and South Africa region with AED 9.4 billion (3%) and West and Central Africa region  with AED 5.2 billion (2%)", FCA added.  
+As the study the first nine months of 2012 marked a signficant increase in the total FZ trade volume with the GCC countries terms of re-exports, compared to imports, reflecting that the GCC countries represent one of the major export destinations to the UAE's free zones. 
+The total UAE FZ trade volume with the GCC countries in terms of value hit AED 42,1 billion in the said period with AED 5,1 billion in imports, AED 35.6 billion of re-exports and AED 1.4 billion of exports.
+Saudi Arabia took the first spot among GCC region’s trading partners during the said period with a total value of AED 26.4 billion i.e. 62.7% of total trade. Kuwait came second with AED 6.9 billion (16.5%), followed by Qatar with AED 4.5 billion (10.7%), Bahrain with AED 2.3 billion (5.4%) and Oman with AED 2 billion (4.8%).
+The study also pointed out that the total trade volume of the UAE free zones and markets with the Arab countries during the said period rose in terms of re-exports, amounting to AED 78,7 billion of which AED 6,8 billion are in imports, AED 4.3 billion are in exports and AED 67.7 billion worth of re-exports.
+The study confirmed that telephone sets took the first position among imports during the said period, with a value of AED 28.5 billion. It was followed by petroleum oils and processed mineral oils with AED 16.5 billion, data processing devices, magnetic and optical readers (AED 15 billion), gold (AED 12.2 billion), cars (AED 5.9 billion), and diamond (AED 5 billion).
+Cigar and cigarettes also took the first rank in the exports list during the first nine monthes of 2012 with total value of AED 2.3 billon. Petroleum oils and processed mineral oils came second (AED 2 billion) followed by bilot boats, fireboats and dredgers (AED 427 million) and copper wires (AED 374 million) and Dimond (AED 280.7 million).
+On the level of re-exports, telephone sets came first with a total value of AED 30,4 billion, followed by data processing devices, magnetic and optical readers (AED 12,5 billion), petroleum oils and processed mineral oils (AED 12,4 billion), gold (AED 8.7 billion), diamond (AED 4 billion).</div>
+            </div>
+            </div>
+
+	</div>
+
+	
+		
+
+	<!--Layout-->
+	<div data-role="layout" data-id="tabstrip-layout">
+
+		<!--Header-->
+		<div data-role="header">
+			<div data-role="navbar">
+                 <a id="buttonAddNewCard" data-role="button" href="News.html"  data-align="left" ></a>
+				<span data-role="view-title"></span>
+			</div>
+		</div>
+
+		<!--Footer-->
+		<div data-role="footer">
+			<div data-role="tabstrip">
+		<a href="English.html" data-icon="home">Home</a>
+				<a href="Services.html" data-icon="action">Services</a>
+				<a href="Ports.html" data-icon="search">Ports</a>
+				<a href="News.html" data-icon="globe">News</a>
+                <a href="ContactUs.html" data-icon="contacts">ContactUs</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
