@@ -680,7 +680,8 @@ padding-top: 1rem;
 .article-body{
     padding:0px 4px;
 }
-body[dir='rtl'].km-on-ios.km-ios6 .km-listview-link:after{
+body[dir='rtl'].km-on-ios.km-ios6 .km-listview-link:after,
+body[dir='rtl'].km-ios7 .km-listview-link:after {
     box-shadow: inset 0.2rem -.2rem 0;
 }
 body[dir='rtl'] .km-listview-link:after,
