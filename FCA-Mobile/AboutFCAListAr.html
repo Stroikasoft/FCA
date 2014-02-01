@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title></title>
@@ -11,11 +11,9 @@
 	<script src="kendo/js/kendo.mobile.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
 
-	<script src="scripts/login.js"></script>
-	<script src="scripts/location.js"></script>
-	<script src="scripts/weather.js"></script>
+	
     	<script src="scripts/NewsAR.js"></script>
-	<script src="scripts/app.js"></script>
+
 
 </head>
 <body dir="rtl">
@@ -37,7 +35,7 @@
 </div>
 
     <script>
-        var app = new kendo.mobile.Application(document.body);
+        var app = new kendo.mobile.Application(document.body,{ layout: "tabstrip-layout"});
 </script>
 
 
@@ -64,5 +62,6 @@
 			</div>
 		</div>
 	</div>
+    
 </body>
 </html>
