@@ -21,7 +21,7 @@
 <body>
 	
 	<!--Ports-->
-	<div id="tabstrip-Ports AR"
+	<div id="tabstrip-PortsAR"
 		data-role="view"
         data-stretch="true"
 		data-title="المنافذ الجمركية">
@@ -54,207 +54,175 @@
                                    '</div>';
 
 
-              var locations = [
+            var locations = [
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">المنطقة الحرة الشمالية</h4>' +
-                                        '</div>'
-                                        ,
-                                        26.017298, 56.122799, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">جمرك ميناء زايد</h4>' +
+                                        '</div>',24.520185,54.383183, 'sea-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">المنطقة الحرة الشمالية</h4>' +
-                                        '</div>', 25.911115, 56.054564, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">جمرك مركز المصفح</h4>' +
+                                        '</div>',24.380775,54.468256, 'sea-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">المنطقة الحرة الجنوبية</h4>' +
-                                        '</div>', 25.686088, 55.919981, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمرك الغويفات</h4>' +
+                                        '</div>',24.124744,51.61746, 'land-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">المنطقة الحرة الغيل</h4>' +
-                                        '</div>', 25.658858, 55.889769, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">جمرك خطم الشكلة</h4>' +
+                                        '</div>',24.199844,55.942039, 'land-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك البريد - عجمان</h4>' +
-                                        '</div>', 25.438314, 55.565672, 'land-16.png'],
-
-
-
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمرك مزيد</h4>' +
+                                        '</div>',24.026089,55.847212, 'land-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك البريد - عجمان</h4>' +
-                                        '</div>', 25.438314, 55.565672, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز الهيلي</h4>' +
+                                        '</div>',24.262459,55.767674, 'land-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك البريد - الشارقة</h4>' +
-                                        '</div>', 25.316718, 55.499754, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">جمرك بريد أبوظبي</h4>' +
+                                        '</div>',24.491848,54.368118, 'air-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">المنطقة الحرة بالحمرية - الشارقة</h4>' +
-                                        '</div>', 25.311753, 55.472288, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">جمرك بريد العين</h4>' +
+                                        '</div>',24.220093,55.758131, 'air-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">بريد دبي</h4>' +
-                                        '</div>', 25.07938, 55.200591, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مطار العين</h4>' +
+                                        '</div>',24.312059,55.610046, 'air-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">مدينة دبي للاعلام</h4>' +
-                                        '</div>', 25.088086, 55.18115, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مطار أبوظبي</h4>' +
+                                        '</div>',24.462151,54.656982, 'air-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">مدينة دبي الطبية</h4>' +
-                                        '</div>', 25.038327, 55.131712, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">جمرك مطار أبوظبي- البطين</h4>' +
+                                        '</div>',24.47215,54.453735, 'air-16.png'],
+										
+										
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">مدينة دبي للانترنت</h4>' +
-                                        '</div>', 25.030861, 55.158019, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك جبل علي</h4>' +
+                                        '</div>',25.005584,55.086801, 'sea-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">قرية دبي للشحن</h4>' +
-                                        '</div>', 24.891419, 55.192137, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمرك ميناء راشد</h4>' +
+                                        '</div>',25.255913,55.282946, 'sea-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">المنطقة الحرة بالمطار</h4>' +
-                                        '</div>', 24.866503, 55.214109, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك ميناء الحمرية</h4>' +
+                                        '</div>',25.298251,55.332899, 'sea-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">مركز دبي للسلع المتعددة</h4>' +
-                                        '</div>', 24.784241, 55.194883, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك الخور</h4>' +
+                                        '</div>',25.272127,55.294088, 'sea-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">الميناء الجاف</h4>' +
-                                        '</div>', 24.741842, 55.225096, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك دبي للأقمشة</h4>' +
+                                        '</div>',25.167705,55.423656, 'land-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">واحة دبي للسيليكون</h4>' +
-                                        '</div>', 24.7144, 55.20587, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك واحة دبي السيليكون - منطقة حرة</h4>' +
+                                        '</div>',25.128462,55.386372, 'land-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">مدينة دبي للاقمشة</h4>' +
-                                        '</div>', 24.734359, 55.156431, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك مدينة دبي للإعلام</h4>' +
+                                        '</div>',25.092206,55.152075, 'land-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">قرية الشحن بجبل علي</h4>' +
-                                        '</div>', 24.779254, 55.104246, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك مدينة دبي للإنترنت</h4>' +
+                                        '</div>',25.098269,55.163212, 'land-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">مدينة دبي اللوجستية</h4>' +
-                                        '</div>', 24.779254, 55.1015, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز مدينة دبي الطبية</h4>' +
+                                        '</div>',25.232915,55.322514, 'land-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">دوكامز - المنطقة الحرة</h4>' +
-                                        '</div>', 24.592085, 55.194883, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك مدينة دبي اللوجستية</h4>' +
+                                        '</div>',24.899906,55.109653, 'land-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">منفذ الهيلي</h4>' +
-                                        '</div>', 24.382124, 55.730467, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك البريد</h4>' +
+                                        '</div>',25.244686,55.309048, 'land-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">منفذ المضيف</h4>' +
-                                        '</div>', 24.279516, 55.722227, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك السلع و المعادن المتعددة</h4>' +
+                                        '</div>',25.069811,55.141069, 'land-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">مزيد</h4>' +
-                                        '</div>', 24.111661, 55.809689, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمرك مطار دبي الدولي</h4>' +
+                                        '</div>',25.266431,55.366974, 'air-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">خطم الشكلة</h4>' +
-                                        '</div>', 24.041447, 55.815182, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك قرية دبي للشحن</h4>' +
+                                        '</div>',25.255452,55.342694, 'air-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">الغويفات</h4>' +
-                                        '</div>', 24.176825, 51.64587, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك مطار آل مكتوم</h4>' +
+                                        '</div>',24.91384,55.140381, 'air-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">المنطقة الحرة الفجيرة</h4>' +
-                                        '</div>', 25.142798, 56.353941, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك قرية الشحن جبل علي</h4>' +
+                                        '</div>',24.986284,55.051182, 'air-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">جمرك الحاويات</h4>' +
-                                        '</div>', 25.025884, 56.285276, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك مطار المنطقة الحرة بالمطار</h4>' +
+                                        '</div>',25.259948,55.372619, 'air-16.png'],
+										
+										
+										
+										
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">خطم الملاحة</h4>' +
-                                        '</div>', 24.97112, 56.29077, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">جمرك ميناء دبا الفجيرة</h4>' +
+                                        '</div>',25.609333,56.298065, 'sea-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">ام الغاف</h4>' +
-                                        '</div>', 24.888928, 56.277037, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">جمرك ميناء الفجيرة</h4>' +
+                                        '</div>',25.188321,56.35849, 'sea-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك حتا</h4>' +
-                                        '</div>', 24.806681, 56.112242, 'land-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">جمرك المنطقة الحرة</h4>' +
+                                        '</div>',25.169561,56.350489, 'land-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">ميناء الجير</h4>' +
-                                        '</div>', 26.002487, 56.068296, 'sea-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">جمارك مطار الفجيرة الدولي</h4>' +
+                                        '</div>',25.132852,56.329651, 'air-16.png'],
+										
+										
+										
+										
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">ميناء صقر</h4>' +
-                                        '</div>', 25.943227, 56.051817, 'sea-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">جمرك ميناء صقر</h4>' +
+                                        '</div>',25.975291,56.05628, 'sea-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">مدينة رأس الخيمة للملاحة البحرية</h4>' +
-                                        '</div>', 25.901233, 56.029844, 'sea-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">جمرك ميناء راس الخيمة</h4>' +
+                                        '</div>',25.797669,55.953595, 'sea-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">ميناء رأس الخيمة</h4>' +
-                                        '</div>', 25.762793, 55.919981, 'sea-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">جمرك ميناء الجزيرة الحمراء</h4>' +
+                                        '</div>',25.713219,55.801628, 'sea-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">ميناء الجزيرة الحمراء</h4>' +
-                                        '</div>', 25.72321, 55.867796, 'sea-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">جمرك ميناء الجير</h4>' +
+                                        '</div>',26.045332,56.085334, 'sea-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">ميناء دبا الفجيرة</h4>' +
-                                        '</div>', 25.599425, 56.340208, 'sea-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">جمرك رأس الدارة</h4>' +
+                                        '</div>',26.049766,56.08748, 'land-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">ميناء خورفكان</h4>' +
-                                        '</div>', 25.356437, 56.342955, 'sea-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">جمرك مطار رأس الخيمة</h4>' +
+                                        '</div>',25.599666,55.944192, 'air-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">ميناء الفجيرة</h4>' +
-                                        '</div>', 25.115445, 56.359434, 'sea-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">جمرك البريد المركزي</h4>' +
+                                        '</div>',25.779143,55.933582, 'air-16.png'],
+										
+										
+										
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">ميناء احمد بن راشد</h4>' +
-                                        '</div>', 25.527572, 55.53546, 'sea-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك خورفكان</h4>' +
+                                        '</div>',25.352636,56.367416, 'sea-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">جمارك الخور</h4>' +
-                                        '</div>', 25.490389, 55.549192, 'sea-16.png'],
-                                ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">ميناء عجمان</h4>' +
-                                        '</div>', 25.425912, 55.466795, 'sea-16.png'],
-                                ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">ميناء خالد</h4>' +
-                                        '</div>', 25.334097, 55.384398, 'sea-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك الحاويات</h4>' +
+                                        '</div>',25.266264,55.487322, 'sea-16.png'],
                                 ['<div id="content">' +
                                         '<h4 id="firstHeading" class="firstHeading">مركز جمارك الخور - الشارقة</h4>' +
-                                        '</div>', 25.331614, 55.378904, 'sea-16.png'],
+                                        '</div>',25.366498,55.386211, 'sea-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">ميناء الحمرية</h4>' +
-                                        '</div>', 25.296854, 55.31848, 'sea-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك خطم الملاحة</h4>' +
+                                        '</div>',24.983975,56.361094, 'land-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">ميناء راشد</h4>' +
-                                        '</div>', 25.262085, 55.271788, 'sea-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك المنطقة الحرة بالحمرية - الشارقة</h4>' +
+                                        '</div>',25.467764,55.483875, 'sea-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">الرصيد الساحلي</h4>' +
-                                        '</div>', 25.24718, 55.263548, 'sea-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك البريد - الشارقة</h4>' +
+                                        '</div>',25.352108,55.390251, 'land-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">جمارك الخور</h4>' +
-                                        '</div>', 25.018418, 55.052061, 'sea-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك الركاب / مطار الشارقه</h4>' +
+                                        '</div>',25.328433,55.512199, 'air-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">ميناء جبل علي</h4>' +
-                                        '</div>', 24.991037, 55.021849, 'sea-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك المنطقه الحره / مطار الشارقه</h4>' +
+                                        '</div>',25.332468,55.483618, 'air-16.png'],
+										
+										
+										
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">ميناء زايد</h4>' +
-                                        '</div>', 24.517139, 54.365416, 'sea-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">جمرك ميناء أحمد بن راشد</h4>' +
+                                        '</div>',25.598238,55.581898, 'sea-16.png'],
+										
+										
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">مركز مصفح</h4>' +
-                                        '</div>', 24.377121, 54.475279, 'sea-16.png'],
+                                        '<h4 id="firstHeading" class="firstHeading">ميناء وجمارك عجمان</h4>' +
+                                        '</div>',25.420641,55.454521, 'sea-16.png'],
                                 ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">مطار رأس الخيمة الدولي</h4>' +
-                                        '</div>', 25.829561, 56.002378, 'air-16.png'],
-                                ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">البريد المركزي برأس الخيمة</h4>' +
-                                        '</div>', 25.780107, 56.016111, 'air-16.png'],
-                                ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">جمرك الشحن بمطار الفجيرة</h4>' +
-                                        '</div>', 25.155229, 56.329222, 'air-16.png'],
-                                ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">مطار الفجيرة الدولي</h4>' +
-                                        '</div>', 25.112958, 56.345701, 'air-16.png'],
-                                ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">جمارك المنطقة الحرة الشارقة</h4>' +
-                                        '</div>', 25.351473, 55.598631, 'air-16.png'],
-                                ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">مطار الشارقة الدولي المنطقة الحرة</h4>' +
-                                        '</div>', 25.358919, 55.444822, 'air-16.png'],
-                                ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">مطار الشارقة الدولي الشحن الجوي</h4>' +
-                                        '</div>', 25.344026, 55.453062, 'air-16.png'],
-                                ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">مطار دبي الدولي</h4>' +
-                                        '</div>', 25.267052, 55.362425, 'air-16.png'],
-                                ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">مطار ال مكتوم</h4>' +
-                                        '</div>', 25.120419, 55.447569, 'air-16.png'],
-                                ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">مطار العين الدولي</h4>' +
-                                        '</div>', 24.166802, 55.779905, 'air-16.png'],
-                                ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">بريد العين</h4>' +
-                                        '</div>', 24.166802, 55.711241, 'air-16.png'],
-                                ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">بريد ابوظبي</h4>' +
-                                        '</div>', 24.459651, 54.395628, 'air-16.png'],
-                                ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">مطار ابوظبي الدولي</h4>' +
-                                        '</div>', 24.444024, 54.652755, 'air-16.png'],
-                                ['<div id="content">' +
-                                        '<h4 id="firstHeading" class="firstHeading">مطار البطين</h4>' +
-                                        '</div>', 24.422144, 54.465988, 'air-16.png']
+                                        '<h4 id="firstHeading" class="firstHeading">مركز جمارك البريد</h4>' +
+                                        '</div>',25.408781,55.444994, 'land-16.png']								     
               ];
 
               var map = new google.maps.Map(document.getElementById('map'), {
@@ -282,7 +250,14 @@
                   google.maps.event.addListener(marker, 'click', (function (marker, i) {
                       return function () {
                           var loc = locations[i][0];
+              if(device.platform === "iOS")
+              {
                           loc += '<div style="text-align:center;"><a data-rel="external"  href="comgooglemaps://?q=';
+              }
+              else
+              {
+              loc += '<div style="text-align:center;"><a data-rel="external"  href="geo://0,0?q=';
+              }
                           loc += locations[i][1] + ',' + locations[i][2];
                           loc += '" style="color:#00303f;font:bold 12px verdana;" title="click here"><img src="googlemapicon.png" alt=""/></a></div>';
                           infowindow.setContent(loc);
@@ -309,6 +284,10 @@
 		</div>
 
 		<!--Footer-->
+        
+     
+
+        
 		<div data-role="footer">
 			<div data-role="tabstrip">
 		         <a href="Arabic.html" data-icon="home">الرئيسية</a>
