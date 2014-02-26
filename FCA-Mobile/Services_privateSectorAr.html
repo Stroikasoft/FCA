@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+	<link href="styles/main.css" rel="stylesheet" />
+
+	<script src="cordova.js"></script>
+	<script src="kendo/js/jquery.min.js"></script>
+	<script src="kendo/js/kendo.mobile.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+
+	<script src="scripts/login.js"></script>
+	<script src="scripts/location.js"></script>
+	<script src="scripts/News.js"></script>
+	<script src="scripts/app.js"></script>
+
+</head>
+<body dir="rtl">
+	<!--Home-->
+    <div id="PrivateSector"
+		data-role="view"
+		data-title=" قطاع خاص">
+    <div class="mainBodyArea">
+        <div class="innerpageTitle">
+        <br />
+<!--            <h3>  قطاع خاص
+            </h3>-->
+        </div>
+
+        <div class="article article-body">
+
+            <div class="article-content">
+                  <table class="customsTable">
+    <thead>
+        <tr>
+
+            <th>اسم الخدمة</th>
+            <th>الإدارة</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+
+            <td>الموقع الإلكتروني للهيئة الإتحادية للجمارك</td>
+            <td>إدارة الخدمات الإلكترونية</td>
+
+        </tr>
+        <tr>
+
+            <td>توفير التقارير الإحصائية لبيانات تجارة المناطق الحرة</td>
+            <td>إدارة الشؤون الجمركية</td>
+
+        </tr>
+        <tr>
+
+            <td>الرد على الاستفسارات الجمركية</td>
+            <td>إدارة الشؤون الجمركية</td>
+
+        </tr>
+        <tr>
+
+            <td>التحقيق في شكاوي وقضايا التبادل التجاري مع مجلس التعاون ودول العالم الخارجي</td>
+            <td>إدارة الشؤون الجمركية</td>
+
+        </tr>
+    </tbody>
+</table>
+
+
+              
+                </div>
+        </div>
+    </div>
+
+</div> 
+	<!--Layout-->
+	<div data-role="layout" data-id="tabstrip-layout">
+
+		<!--Header-->
+		<div data-role="header">
+			<div data-role="navbar">
+                   <a id="buttonAddNewCard" data-role="button" href="ServicesAR.html"  data-align="left" ></a>
+				<span data-role="view-title"></span>
+			</div>
+		</div>
+
+		<!--Footer-->
+		<div data-role="footer">
+			<div data-role="tabstrip">
+			<a href="Arabic.html" data-icon="home">الرئيسية</a>
+				<a href="ServicesAR.html" data-icon="action">الخدمات</a>
+				<a href="PortsAR.html" data-icon="search">المنافذ</a>
+				<a href="NewsAr.html" data-icon="globe">الأخبار</a>
+                <a href="ContactUsAR.html" data-icon="contacts">اتصل بنا</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
