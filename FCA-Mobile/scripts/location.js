@@ -1,4 +1,4 @@
-﻿(function (global) {
+(function (global) {
 	var map,
 		geocoder,
 		LocationViewModel,

@@ -11,93 +11,42 @@
 	<script src="kendo/js/kendo.mobile.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
 
-	<script src="scripts/login.js"></script>
-	<script src="scripts/location.js"></script>
-	<script src="scripts/weather.js"></script>
-	<script src="scripts/app.js"></script>
-    <script src="scripts/News.js"></script>
+	
+    
+    
+      <script src="scripts/maps/everlive.all.min.js"></script>
+      <script src="scripts/maps/settings.js" type="text/javascript"></script>
+      <script src="scripts/maps/app.js" type="text/javascript"></script>
+      <script src="scripts/maps/activities.js" type="text/javascript"></script>
 
 </head>
 <body>
 	
-	 <div data-role="view" data-init="mobileListViewFiltering" data-title="Scroll down to load">
-    <header data-role="header">
+<div data-role="view" id="view-all-activities" data-layout="default" class="activities-view" data-model="app.Activities">
+    <div data-role="header">
         <div data-role="navbar">
-            <span data-role="view-title"></span>
-            <a data-align="right" data-role="button" class="nav-button" href="#index">Index</a>
+            Activities
+            <a class="nav-button nav-button-add hide-text" data-align="right" data-role="button" href="views/addActivityView.html">Add</a>
         </div>
-    </header>
+    </div>
 
-    <ul id="filterable-listview"></ul>
+    <ul id="activities-listview" data-style="inset" data-role="listview" data-template="activityTemplate"
+        data-bind="source: activities"></ul>
+    <p id="no-activities-span" hidden="hidden" class="no-items-msg">
+        <b>You have no posts yet.</b><br /><br />Tap on the plus sign and share what's on your mind.
+    </p>
 </div>
-  
-<script type="text/x-kendo-tmpl" id="mobile-listview-filtering-template">
-    <div class="product">
+
+<!-- Activities ListView Template -->
+<script type="text/x-kendo-template" id="activityTemplate">
+    <div data-role="touch" data-bind="events: { tap: activitySelected }" class="cf">
       
-        <h3>#:portName#</h3>
-      <a href="#=link#" data-rel="external" >sdfsd</a>
-
-
+        <div class="activity-content">
+        
+            <a class="user-share-txt">${Text}</a>
+        </div>
     </div>
 </script>
-
-<script>
-    function mobileListViewFiltering() {
-        var dataSource = new kendo.data.DataSource({
-            transport: {
-                read: {
-                    url: "data/Ports.json",
-                    dataType: "json"
-                }
-            },
-            sort: {
-                field: "portName",
-                dir: "desc"
-            },
-            serverPaging: true,
-            serverFiltering: true,
-            serverSorting: true,
-            pageSize: 50
-        });
-
-        $("#filterable-listview").kendoMobileListView({
-            dataSource: dataSource,
-            template: $("#mobile-listview-filtering-template").text(),
-            filterable: {
-                field: "portName",
-                operator: "startswith"
-            },
-            endlessScroll: true
-        });
-    }
-</script>
-
-<style scoped>
-    .product h3 {
-        font-size: 1.3em;
-        line-height: 1.4em;
-        margin: 0;
-        padding: 0;
-        height: 1.3em;
-        overflow: hidden;
-    }
-    .product p {
-        font-size: 1em;
-        margin: 0;
-        padding: .3em 0 0;
-    }
-    .pullImage {
-        width: 64px;
-        height: 64px;
-        border-radius: 3px;
-        float: left;
-        margin-right: 10px;
-    }
-</style>
-
-
-<script>
-    var app = new kendo.mobile.Application(document.body,{ layout: "tabstrip-layout"});
-</script>
+    
 </body>
 </html>

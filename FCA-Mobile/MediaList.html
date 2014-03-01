@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Customs Affairs List</title>
+	<title>Media List</title>
 	<meta charset="utf-8" />
 	<link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
 	<link href="styles/main.css" rel="stylesheet" />
@@ -13,23 +13,18 @@
 
 	<script src="scripts/login.js"></script>
 	<script src="scripts/location.js"></script>
-	<script src="scripts/weather.js"></script>
+	<script src="scripts/NewsAR.js"></script>
 	<script src="scripts/app.js"></script>
 
 </head>
-<body>
+<body >
 	<!--Home-->
   
-    <div id="CustomsAffairs" data-role="view" data-title="International Relations List">
-    <ul data-role="listview" data-style="inset" data-type="group">
-       <li>International Relations List
-            <ul>
-               <!-- <li ><a href="InternationalRelations_BilateralAgreements.html">Bilateral Agreements </a></li>-->
-                <li ><a href="CustomsAffairs_ServicePrice.html">Service Price</a></li>
-            </ul>
-        </li>
-    </ul>
-</div>
+    <div id="MediaList" data-role="view" data-title="Media">
+      <div style="text-align:center;">
+        <h4>Under Constructions...</h4>
+		</div>
+	</div>
 
     <script>
         app.application = new kendo.mobile.Application(document.body, { transition: "slide",layout: "tabstrip-layout"});
@@ -41,7 +36,8 @@
 
 		<!--Header-->
 		<div data-role="header">
-			<div data-role="navbar">
+			<div data-role="navbar" class="innerContent">
+                 <img src="icons/logo-inside.png" class="customsLogoImg">   
              <a id="buttonAddNewCard" data-role="button" href="English.html"  data-align="left" ></a>
 				<span data-role="view-title"></span>
 			</div>
@@ -50,7 +46,7 @@
 		<!--Footer-->
 		<div data-role="footer">
 			<div data-role="tabstrip">
-			<a href="English.html" data-icon="home">Home</a>
+		        <a href="English.html" data-icon="home">Home</a>
 				<a href="Services.html" data-icon="action">Services</a>
 				<a href="Ports.html" data-icon="search">Ports</a>
 				<a href="News.html" data-icon="globe">News</a>
